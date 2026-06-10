@@ -1,0 +1,105 @@
+:root {
+  --space-xs: 0.25rem;
+  --space-md: 0.75rem;
+  --space-xl: 2rem;
+
+  --font-base: 1rem;
+  --font-2xl: 1.75rem;
+
+  --color-button-primary: #ffffff;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #0b0b47;
+  --color-bg: #0b0b47;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Inter, Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+}
+
+.scenes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-xl);
+  justify-content: space-evenly;
+}
+
+.canvas-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.button-base {
+  background-color: var(--color-button-primary);
+  color: var(--color-text-secondary);
+  padding: var(--space-md);
+}
+
+.button-base:hover {
+  opacity: 0.7;
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  border-radius: var(--space-md);
+  font-size: var(--font-base);
+}
+
+.button-arrow {
+  font-size: var(--font-2xl);
+}
+
+.title {
+  font-size: var(--font-2xl);
+}
+
+.text {
+  font-size: var(--font-base);
+}
+
+.scene-controls {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.action-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}

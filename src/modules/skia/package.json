@@ -1,0 +1,5 @@
+{
+  "name": "skia",
+  "main": "./index.ts",
+  "types": "./canvaskit.d.ts"
+}

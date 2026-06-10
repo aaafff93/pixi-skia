@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pixi Skia</title>
+</head>
+<body>
+<div class="app">
+    <div class="scenes">
+        <div class="canvas-container">
+            <p class="title">Pixi.js</p>
+            <div id="pixi-root"></div>
+        </div>
+        <div class="canvas-container">
+            <p class="title">Skia</p>
+            <div id="skia-root"></div>
+        </div>
+    </div>
+    <div class="scene-controls">
+        <button id="prev" class="button-base button-arrow">&lt;</button>
+        <button id="next" class="button-base button-arrow">&gt;</button>
+    </div>
+    <div class="action-controls">
+        <button id="add-random" class="button-base button-primary">
+            Сгенерировать случайную фигуру
+        </button>
+        <button id="export-pdf" class="button-base button-primary">
+            Экспорт в PDF
+        </button>
+    </div>
+    <div class="description">
+        <p class="title">Описание:</p>
+        <p id="scene-description" class="text"></p>
+    </div>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>

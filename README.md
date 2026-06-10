@@ -23,6 +23,10 @@
 
 https://github.com/aaafff93/pixi-skia
 
+## Демо
+
+https://pixi-skia-ruby.vercel.app/
+
 ## Установка и запуск
 
 ```bash
